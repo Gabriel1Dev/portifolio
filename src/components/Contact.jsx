@@ -20,7 +20,7 @@ const contactLinks = [
   },
   {
     name: "LinkedIn",
-    value: "linkedin.com/in/seu-perfil",
+    value: "https://www.linkedin.com/in/gabriel-rodrigues-devjun/",
     href: "https://www.linkedin.com/in/gabriel-rodrigues-devjun/",
     icon: FaLinkedin,
   },
