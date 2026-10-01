@@ -39,15 +39,15 @@ const Contact = () => (
   >
     <div className="container relative z-10 mx-auto max-w-6xl px-4 sm:px-8 lg:px-14">
       <div className="mb-12 text-center" data-aos="fade-up">
-        <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-blue-700 dark:text-white">
+        <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-blue-700 dark:text-[#EEF2FA]">
           Contato
         </p>
-        <h2 className="mb-3 text-3xl font-bold text-gray-800 sm:text-4xl">
+        <h2 className="mb-3 text-3xl font-bold text-gray-800 dark:text-[#EEF2FA] sm:text-4xl">
           Vamos{" "}
-          <span className="text-blue-700 dark:text-white">conversar?</span>
+          <span className="text-blue-700 dark:text-[#EEF2FA]">conversar?</span>
         </h2>
-        <div className="mx-auto h-1 w-16 rounded-full bg-blue-600 dark:bg-blue-400" />
-        <p className="mt-5 text-gray-900">
+        <div className="mx-auto h-1 w-16 rounded-full bg-blue-600 dark:bg-[#4C8DFF]" />
+        <p className="mt-5 text-gray-900 dark:text-[#A9B4CC]">
           Estou aberto a oportunidades, colaborações e projetos interessantes.
         </p>
       </div>
@@ -60,19 +60,19 @@ const Contact = () => (
           return (
             <div
               key={item.name}
-              className="flex min-h-[200px] flex-col items-center justify-center rounded-2xl border border-gray-200 bg-white p-4 text-center shadow-md transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl dark:border-white/10 dark:bg-slate-900 sm:min-h-[240px] sm:p-6"
+              className="flex min-h-[200px] flex-col items-center justify-center rounded-2xl border border-gray-200 bg-white p-4 text-center shadow-md transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl dark:border-white/[0.08] dark:bg-[#151B2E] sm:min-h-[240px] sm:p-6"
               data-aos="fade-up"
               data-aos-delay={index * 100}
             >
-              <div className="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-full bg-blue-500/10 text-blue-600 dark:text-blue-300 sm:mb-4 sm:h-14 sm:w-14">
+              <div className="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-full bg-blue-500/10 text-blue-600 dark:bg-[#4C8DFF]/10 dark:text-[#4C8DFF] sm:mb-4 sm:h-14 sm:w-14">
                 <Icon size={20} className="sm:text-[22px]" />
               </div>
-              <p className="mb-2 text-[0.68rem] font-semibold uppercase tracking-[0.14em] text-gray-500 dark:text-gray-400 sm:text-sm">
+              <p className="mb-2 text-[0.68rem] font-semibold uppercase tracking-[0.14em] text-gray-500 dark:text-[#A9B4CC] sm:text-sm">
                 {item.name}
               </p>
 
               {item.href === "#" ? (
-                <p className="max-w-full break-words text-[0.8rem] font-medium leading-tight text-gray-800 dark:text-white sm:text-[0.95rem]">
+                <p className="max-w-full break-words text-[0.8rem] font-medium leading-tight text-gray-800 dark:text-[#EEF2FA] sm:text-[0.95rem]">
                   {item.value}
                 </p>
               ) : (
@@ -80,7 +80,7 @@ const Contact = () => (
                   href={item.href}
                   target={isExternal ? "_blank" : undefined}
                   rel={isExternal ? "noopener noreferrer" : undefined}
-                  className="inline-block max-w-full break-words text-[0.8rem] font-medium leading-tight text-blue-700 transition-colors hover:text-blue-900 dark:text-blue-300 dark:hover:text-white sm:text-[0.95rem]"
+                  className="inline-block max-w-full break-words text-[0.8rem] font-medium leading-tight text-blue-700 transition-colors hover:text-blue-900 dark:text-[#4C8DFF] dark:hover:text-[#EEF2FA] sm:text-[0.95rem]"
                 >
                   {item.value}
                 </a>
@@ -97,7 +97,7 @@ const Contact = () => (
       >
         <a
           href="mailto:gabrieldeoliveirarodrigues825@gmail.com"
-          className="inline-flex items-center justify-center rounded-full bg-blue-700 px-8 py-3 text-base font-semibold text-white shadow-lg transition duration-200 hover:-translate-y-0.5 hover:bg-blue-800 dark:bg-blue-600 dark:hover:bg-blue-500"
+          className="inline-flex items-center justify-center rounded-full bg-blue-700 px-8 py-3 text-base font-semibold text-white shadow-lg transition duration-200 hover:-translate-y-0.5 hover:bg-blue-800 dark:bg-[#4C8DFF] dark:hover:bg-blue-500"
         >
           Enviar mensagem
         </a>

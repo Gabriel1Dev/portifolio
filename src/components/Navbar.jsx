@@ -30,26 +30,21 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
         className="relative w-[95%] max-w-4xl mb-4"
       >
         <div
-          className="
-            relative 
-            bg-linear-to-r from-blue-600 to-blue-800 
-            backdrop-blur-xl 
-            rounded-2xl 
-            shadow-2xl 
-            border border-white/20 
-            px-3 py-2
-          "
+          className={`relative rounded-2xl border px-3 py-2 shadow-2xl backdrop-blur-xl ${
+            darkMode
+              ? "border-white/[0.08] bg-[#151B2E]"
+              : "border-white/20 bg-linear-to-r from-blue-600 to-blue-800"
+          }`}
         >
           <div className="absolute -top-5 right-3">
             <motion.button
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
               onClick={toggleDarkMode}
-              className="p-2 rounded-full bg-gray-900
-                dark:bg-gray-100 transition-colors backdrop-blur-sm"
+              className="rounded-full border border-white/[0.08] bg-gray-900 p-2 transition-colors backdrop-blur-sm dark:bg-[#151B2E]"
             >
               {darkMode ? (
-                <Sun className="w-4 lg:w-5 h-4 lg:h-5 text-gray-600 " />
+                <Sun className="h-4 w-4 text-[#4C8DFF] lg:h-5 lg:w-5" />
               ) : (
                 <Moon className="w-4 lg:w-5 h-4 lg:h-5 text-white" />
               )}

@@ -22,10 +22,7 @@ const Hero = () => {
             data-aos="fade-right"
           >
             <div className="relative group">
-              <div
-                className="absolute inset-0 bg-lienar-to-r from-blue-400 to-blue-600 rounded-full filter blur-2xl opacity-30 group-hover:opacity-50
-                         transition-opacity duration-500"
-              />
+              <div className="absolute inset-0 rounded-full bg-linear-to-r from-blue-400 to-blue-600 opacity-30 blur-2xl transition-opacity duration-500 group-hover:opacity-50 dark:bg-[#4C8DFF]/25" />
               <div className="relative w-72 h-72 sm:w-80 sm:h-80 lg:w-96 lg:h-96">
                 <img
                   src={hero}
@@ -33,14 +30,8 @@ const Hero = () => {
                   className="w-full h-full object-cover rounded-full relative
                   z-10 transform group-hover:scale-105 transition-transform duration-500"
                 />
-                <div
-                  className="absolute inset-0 border-2 dark:border-blue-500/30 border-gray-400 rounded-full scale-110 group-hover:scale-125
-                 transition-transform duration-500"
-                />
-                <div
-                  className="absolute inset-0 border-2 dark:border-blue-500/30 border-gray-400 rounded-full scale-125
-                 group-hover:scale-150 transition-transform duration-500"
-                />
+                <div className="absolute inset-0 scale-110 rounded-full border-2 border-gray-400 transition-transform duration-500 group-hover:scale-125 dark:border-[#4C8DFF]/30" />
+                <div className="absolute inset-0 scale-125 rounded-full border-2 border-gray-400 transition-transform duration-500 group-hover:scale-150 dark:border-[#4C8DFF]/30" />
               </div>
             </div>
           </div>
@@ -48,11 +39,11 @@ const Hero = () => {
             className="lg:w-3/5 w-full flex flex-col items-center 
           lg:items-start"
           >
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-800 mb-4">
+            <h1 className="mb-4 text-4xl font-bold text-gray-800 dark:text-[#EEF2FA] sm:text-5xl lg:text-6xl">
               Olá, meu nome é{" "}
-              <span className="dark:text-white text-blue-500">Gabriel</span>
+              <span className="text-blue-500 dark:text-[#4C8DFF]">Gabriel</span>
             </h1>
-            <p className="text-lg text-gray-900 mb-6">
+            <p className="mb-6 text-lg text-gray-900 dark:text-[#A9B4CC]">
               Estudante de ADS em busca de oportunidades para aplicar meus
               conhecimentos em programação, desenvolvimento de sistemas e
               tecnologia.
@@ -64,7 +55,7 @@ const Hero = () => {
                   href={social.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-blue-500 text-white p-3 rounded-full hover:bg-blue-600 transition-colors duration-300"
+                  className="rounded-full bg-blue-500 p-3 text-white transition-colors duration-300 hover:bg-blue-600 dark:bg-[#4C8DFF] dark:hover:bg-blue-500"
                 >
                   <social.icon />
                 </a>

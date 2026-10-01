@@ -7,6 +7,21 @@ body {
 
 .dark {
   color-scheme: dark;
+  --night-base: #0b1020;
+  --night-glow: rgba(76, 141, 255, 0.25);
+  --night-surface: #151b2e;
+  --night-border: rgba(255, 255, 255, 0.08);
+  --night-heading: #eef2fa;
+  --night-text: #a9b4cc;
+  --night-accent: #4c8dff;
+}
+
+.dark .portfolio-shell {
+  background-image: radial-gradient(
+    ellipse at top,
+    var(--night-glow),
+    transparent 55%
+  );
 }
 
 html {

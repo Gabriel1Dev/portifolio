@@ -52,11 +52,12 @@ const Skills = () => {
     >
       <div className="container mx-auto px-4 sm:px-8 lg:px-14 relative z-10">
         <div className="text-center mb-12" data-aos="fade-up">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-2 text-gray-800">
-            Minhas <span className="text-blue-700 dark:text-white">Skills</span>
+          <h2 className="mb-2 text-3xl font-bold text-gray-800 dark:text-[#EEF2FA] sm:text-4xl">
+            Minhas{" "}
+            <span className="text-blue-700 dark:text-[#EEF2FA]">Skills</span>
           </h2>
-          <div className="w-20 h-1 dark:bg-white bg-blue-500 mx-auto rounded-full" />
-          <p className="mt-5 text-gray-900">
+          <div className="mx-auto h-1 w-20 rounded-full bg-blue-500 dark:bg-[#4C8DFF]" />
+          <p className="mt-5 text-gray-900 dark:text-[#A9B4CC]">
             Tecnologias e ferramentas que utilizo nos meus estudos e projetos.
           </p>
         </div>
@@ -65,21 +66,21 @@ const Skills = () => {
           {skillGroups.map((group, index) => (
             <article
               key={group.title}
-              className="bg-white/90 dark:bg-gray-800/90 rounded-2xl p-6 shadow-md hover:shadow-xl transition-shadow duration-300"
+              className="rounded-2xl bg-white/90 p-6 shadow-md transition-shadow duration-300 hover:shadow-xl dark:border dark:border-white/[0.08] dark:bg-[#151B2E]"
               data-aos="fade-up"
               data-aos-delay={index * 100}
             >
-              <h3 className="text-lg font-semibold text-gray-800 dark:text-white mb-5">
+              <h3 className="mb-5 text-lg font-semibold text-gray-800 dark:text-[#EEF2FA]">
                 {group.title}
               </h3>
               <ul className="space-y-3">
                 {group.skills.map((skill) => (
                   <li
                     key={skill.name}
-                    className="flex items-center gap-3 text-gray-700 dark:text-gray-200"
+                    className="flex items-center gap-3 text-gray-700 dark:text-[#A9B4CC]"
                   >
                     <skill.icon
-                      className="text-blue-600 dark:text-blue-400"
+                      className="text-blue-600 dark:text-[#4C8DFF]"
                       size={22}
                     />
                     <span>{skill.name}</span>
